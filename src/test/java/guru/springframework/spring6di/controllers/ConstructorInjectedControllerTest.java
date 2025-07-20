@@ -23,5 +23,6 @@ class ConstructorInjectedControllerTest {
     @Test
     void sayHello() {
         assertEquals("Hello Everyone from Base Service!!!", constructorInjectedController.sayHello());
+        assertNotEquals("Hello from the Primary Bean!!!", constructorInjectedController.sayHello());
     }
 }
