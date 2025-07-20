@@ -6,6 +6,9 @@ package guru.springframework.spring6di.services;
  * @create 20/07/2025 - 21:09
  */
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class GreetingServiceImpl implements GreetingService {
     @Override
     public String sayGreeting() {
